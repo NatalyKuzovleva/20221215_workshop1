@@ -3,6 +3,7 @@
 // 3 -> Среда
 // 5 -> Пятница
 
+// Вариант 1
 // Console.WriteLine("Введите целое число от 1 до 7, затем нажмите ENTER:");
 // int day = Convert.ToInt32(Console.ReadLine());
 
@@ -39,7 +40,7 @@
 // 	Console.WriteLine("Такого дня недели не существует! Неправильно введён номер.");
 // }
 
-
+// Вариант 2
 Console.WriteLine("Введите целое число от 1 до 7, затем нажмите ENTER:");
 int day = Convert.ToInt32(Console.ReadLine());
 
