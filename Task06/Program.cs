@@ -5,3 +5,16 @@
 // -3 -> нет
 // 7 -> нет
 
+Console.WriteLine("Введите целое число:");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num % 2 == 0)   // Четное число — это целое число, делящееся без остатка на 2
+{
+    // Console.WriteLine($"{num} -> да");
+    Console.WriteLine($"Число {num} -> чётное");
+} 
+else
+{
+    // Console.WriteLine($"{num} -> нет");
+    Console.WriteLine($"Число {num} -> не является чётным");
+}
