@@ -21,6 +21,7 @@ Console.WriteLine($"Случайное число из диапазона 10-99 
 
 // if (firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра полученного числа = {firstDigit}");
 // else Console.WriteLine($"Наибольшая цифра полученного числа = {secondDigit}");
+// Если действие одно, то можно без фигурных скобок использовать конструкции if .. else - в одну строчку.
 
 // Console.Write("Наибольшая цифра полученного числа = ");
 // Console.WriteLine(firstDigit > secondDigit ? firstDigit : secondDigit); //тернарный оператор
@@ -56,3 +57,28 @@ int MaxDigit(int num)       // Название метода - с большой
 }
 
 // в методе названия входных переменных должны отличаться от глобальных переменных num = number
+
+
+
+// Вариант решения задачи без длинных комментариев:
+// int number = new Random().Next(10, 100);
+// Console.WriteLine($"Случайное число из диапазона 10 - 99 => {number}");
+
+// int firstDigit = number / 10; 
+// int secondDigit = number % 10;
+
+// int result = firstDigit > secondDigit ? firstDigit : secondDigit;
+// Console.Write($"Наибольшая цифра числа  = {result}");
+
+
+
+// Реализация задачи через Метод:
+// int MaxDigit(int num) //num = number
+// {
+// 	int firstDigit = num / 10; 
+// 	int secondDigit = num % 10;
+// 	return firstDigit > secondDigit ? firstDigit : secondDigit;
+// }
+
+// int maxDigit = MaxDigit(number)  //вызов функции
+// Console.Write($"Наибольшая цифра числа  = {maxDigit}");

@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// 11. Напишите программу, которая выводит случайное
+// трёхзначное число и удаляет вторую цифру этого
+// числа.
+// 456 -> 46
+// 782 -> 72
+// 918 -> 98
+
+int randomNumber = new Random().Next(100, 1000); // получаем случайное трехзначное число
+Console.WriteLine($"Случайное трехзначное число в диапазоне 100...999 -> {randomNumber}");
+
+int result = DeleteMidDigit(randomNumber);
+Console.WriteLine($"Новое число после удаления 2й цифры -> {result}");
+//Console.WriteLine($"{randomNumber} -> {result}");
+
+int DeleteMidDigit(int num)
+{
+    int res = (num / 100) * 10 + num % 10;
+    return res;
+}
