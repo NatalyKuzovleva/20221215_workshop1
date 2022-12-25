@@ -31,8 +31,9 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 // Вариант 2
 bool CheckMultiplicity(int userNum1, int userNum2)
 {
-    if (userNum1 % userNum2 == 0) return true;
-    else return false;
+    return userNum1 % userNum2 == 0;
+    // if (userNum1 % userNum2 == 0) return true;
+    // else return false;
 }
 
 if (CheckMultiplicity(number1, number2))

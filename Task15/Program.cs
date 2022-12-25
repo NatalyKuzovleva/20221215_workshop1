@@ -27,6 +27,12 @@ else
 
 bool CheckHoliday(int num)                  // Метод для проверки, является ли день выходным
 {
-    if (num == 6 || num == 7) return true;
-    else return false;
+    return num == 6 || num == 7;
 }
+
+
+// bool CheckHoliday(int num)               // Метод для проверки, является ли день выходным
+// {
+//     if (num == 6 || num == 7) return true;
+//     else return false;
+// }
