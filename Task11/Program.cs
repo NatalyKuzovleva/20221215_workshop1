@@ -8,9 +8,9 @@
 int randomNumber = new Random().Next(100, 1000); // получаем случайное трехзначное число
 Console.WriteLine($"Случайное трехзначное число в диапазоне 100...999 -> {randomNumber}");
 
-int result = DeleteMidDigit(randomNumber);
-Console.WriteLine($"Новое число после удаления 2й цифры -> {result}");
-//Console.WriteLine($"{randomNumber} -> {result}");
+int newDigit = DeleteMidDigit(randomNumber);
+Console.WriteLine($"Новое число после удаления 2й цифры -> {newDigit}");
+//Console.WriteLine($"{randomNumber} -> {newDigit}");
 
 int DeleteMidDigit(int num)
 {
