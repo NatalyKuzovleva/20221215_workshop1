@@ -28,7 +28,7 @@ int[] CreateArrayRndInt(int size, int min, int max)     // Создание ма
 }
 
 
-void PrintArray(int[] array)      // Вывод массива на печать в формате [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] 
+void PrintArray(int[] array)   // Вывод массива на печать в строку в формате [a1,a2,a3,a4,a5]  
 {
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)
