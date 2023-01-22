@@ -18,7 +18,7 @@ int[] CreateArrayRndInt(int size, int min, int max)     // Создание ма
 // int[] - метод возвращает массив
 {
     int[] array = new int[size];    // создаём массив
-    Random rnd = new Random();      // создать объект Рандом - экземпляр класса Рандом
+    Random rnd = new Random();      // создаём объект Рандом - экземпляр класса Рандом
     // необходимо сначала создать объект рандом, потом использовать Next
     for (int i = 0; i < array.Length; i++)
     {
