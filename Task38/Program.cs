@@ -56,12 +56,13 @@ double FindMaxElement(double[] array)   // Поиск максимального
 }
 
 
-// double FindDifference(double min, double max) // Поиск разницы двух вещественных чисел
-// {
-//     if (min < max) double result = max - min;
-//     else result = min - max;
-//     return result;
-// }
+double FindDifference(double min, double max)       // Поиск разности двух вещественных чисел
+{
+    double result = 0;
+    if (min < max) result = max - min;
+    else result = min - max;
+    return result;
+}
 
 /*********************************************************************************/
 
@@ -74,8 +75,8 @@ Console.WriteLine($"Минимальный элемент массива рав�
 double findMaxElem = FindMaxElement(arr);
 Console.WriteLine($"Максимальный элемент массива равен {findMaxElem}");
 
-double findDifference = Math.Round(findMaxElem - findMinElem, 1, MidpointRounding.AwayFromZero);
+// double findDifference = Math.Round(findMaxElem - findMinElem, 1, MidpointRounding.AwayFromZero);
+// Console.WriteLine($"Разница между максимальным и минимальным элементом массива равна {findDifference}");
+
+double findDifference = Math.Round(FindDifference(findMinElem, findMaxElem), 1, MidpointRounding.AwayFromZero);
 Console.WriteLine($"Разница между максимальным и минимальным элементом массива равна {findDifference}");
-
-//double findDifference = FindDifference(findMinElem, findMaxElem);
-
